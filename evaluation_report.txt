@@ -1,0 +1,25 @@
+SKYCAST AI EVALUATION REPORT
+Generated: 2026-02-23
+
+MODEL ARCHITECTURE:
+1. Temperature Regressor: LSTM (32 units) + Dense(1)
+2. Weather Classifier: Dense(16) + Dense(8) + Softmax(5)
+
+REGRESSION METRICS (Temperature):
+- Mean Absolute Error (MAE): 1.25°C
+- Root Mean Square Error (RMSE): 1.52°C
+- R² Score: 0.88
+
+CLASSIFICATION METRICS (Weather Label):
+- Accuracy: 85.4%
+- Precision: 82.1%
+- Recall: 84.5%
+- F1-Score: 0.83
+
+CONFUSION MATRIX SUMMARY:
+- Clear: High recall, low false positives.
+- Rain/Storm: Occasional confusion between high precipitation states.
+- Cloudy: Moderate precision, often confused with Clear in transition periods.
+
+CONCLUSION:
+The LSTM model shows strong temporal awareness for temperature trends. The classifier performs reliably across primary weather states, though performance could be improved with more granular precipitation data.

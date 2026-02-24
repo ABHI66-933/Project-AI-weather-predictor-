@@ -1,0 +1,5 @@
+{
+  "name": "SkyCast AI: Weather Intelligence Dashboard",
+  "description": "A professional machine learning platform for historical weather analysis and predictive forecasting using LSTM and Random Forest models.",
+  "requestFramePermissions": []
+}
